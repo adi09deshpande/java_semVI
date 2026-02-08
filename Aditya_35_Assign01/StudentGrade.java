@@ -7,15 +7,15 @@ class Student {
     private double per;
     private char grade;
 
-    // Constructor
-    Student(String n, int r, int m[]) {
+    Student(String n, int r, int m[])
+    {
         name = n;
         roll = r;
         marks = m;
     }
 
-    // Method to calculate percentage and grade
-    public void calculate() {
+    public void calculate() 
+    {
         int total = 0;
         for (int i = 0; i < 5; i++)
             total += marks[i];
@@ -27,20 +27,21 @@ class Student {
         else grade = 'C';
     }
 
-    // Method to display result
-    public void display() {
-        System.out.println(name + "  Roll: " + roll +
-                "  Percentage: " + per +
-                "  Grade: " + grade);
+    public void display() 
+    {
+        System.out.println(name + "  Roll: " + roll + "  Percentage: " + per + "  Grade: " + grade);
     }
 }
 
-public class StudentGrade {
-    public static void main(String args[]) {
+public class StudentGrade 
+{
+    public static void main(String args[]) 
+    {
         Scanner sc = new Scanner(System.in);
         Student s[] = new Student[3];
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) 
+        {
             System.out.println("Enter Name, Roll No and 5 Marks:");
             String name = sc.next();
             int roll = sc.nextInt();
@@ -56,7 +57,6 @@ public class StudentGrade {
         System.out.println("\nStudent Details:");
         for (int i = 0; i < 3; i++)
             s[i].display();
-
         sc.close();
     }
 }

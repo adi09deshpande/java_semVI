@@ -51,7 +51,6 @@ class InternEmployee extends Employee {
     }
 }
 
-// Main Class
 public class HierarchicalInheritanceDemo {
     public static void main(String[] args) {
 
