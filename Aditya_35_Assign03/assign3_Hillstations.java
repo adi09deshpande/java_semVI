@@ -1,4 +1,4 @@
-class Hillstations
+class Hillstation
 {
     public void famousfood() {
         System.out.println("Hill stations offer unique local delicacies");
@@ -10,7 +10,7 @@ class Hillstations
 }
 
 // First subclass
-class Ooty extends Hillstations {
+class Ooty extends Hillstation {
     public void famousfood() {
         System.out.println("Ooty is known for: Homemade chocolates, Varkey, Tea");
     }
@@ -21,7 +21,7 @@ class Ooty extends Hillstations {
 }
 
 // Second subclass
-class Mussoorie extends Hillstations {
+class Mussoorie extends Hillstation {
     public void famousfood() {
         System.out.println("Mussoorie specialties: Bal Mithai, Singori, Garhwal ka Fannah");
     }
@@ -32,7 +32,7 @@ class Mussoorie extends Hillstations {
 }
 
 // Third subclass
-class Nainital extends Hillstations {
+class Nainital extends Hillstation {
     public void famousfood() {
         System.out.println("Nainital delights: Bal Mithai, Arsa, Ras");
     }
@@ -42,12 +42,10 @@ class Nainital extends Hillstations {
     }
 }
 
-public class Version2_Hillstations {
+public class assign3_Hillstations {
     public static void main(String[] args) {
         System.out.println("*** EXPLORING INDIAN HILL STATIONS ***\n");
-        
-        // demonstrating runtime polymorphism
-        Hillstations place;
+        Hillstation place;
         
         // first hill station
         place = new Ooty();
