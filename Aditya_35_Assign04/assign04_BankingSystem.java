@@ -46,6 +46,7 @@ class assign04_BankingSystem {
             File f = new File(file);
             File temp = new File("temp.txt");
 
+            //buffered reader is used read text from a file efficintely, while BufferedWriter is used to write text to a file efficiently by storing data in memory first and then writing it in chunks.
             BufferedReader br = new BufferedReader(new FileReader(f));
             BufferedWriter bw = new BufferedWriter(new FileWriter(temp));
 
