@@ -6,6 +6,8 @@ class assign04_BankingSystem {
     static String file = "data.txt";
 
     // Create Account
+
+    //main is static so it cannot call non static methods without creating a object 
     static void create() {
         try {
             System.out.print("Enter CID (1-20): ");
