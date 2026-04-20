@@ -1,0 +1,35 @@
+HOW TO RUN (VSCode only - no Tomcat needed)
+===========================================
+
+REQUIREMENTS:
+  - VSCode
+  - Java 11 or above
+  - Maven (or use VSCode Extension Pack for Java)
+  - MySQL installed and running
+
+STEP 1 - Install VSCode Extensions:
+  Search and install: "Extension Pack for Java"
+  (This adds Java + Maven support to VSCode)
+
+STEP 2 - Setup MySQL:
+  - Open MySQL and run the file: setup.sql
+  - It creates the database and table for you
+
+STEP 3 - Update your MySQL password:
+  - Open: src/main/java/com/employee/DBConnection.java
+  - Change the 'pass' variable to your MySQL password
+
+STEP 4 - Open project in VSCode:
+  File → Open Folder → select the EmployeeReg folder
+
+STEP 5 - Run the app:
+  Option A: Click the Run button (▶) next to main() in Main.java
+  Option B: Press F5
+  Option C: Open terminal in VSCode and type:
+            mvn package
+            java -jar target/EmployeeRegistration-1.0.jar
+
+STEP 6 - Open browser:
+  Go to:  http://localhost:8080
+
+DONE! No Tomcat. No deployment. Just run and open browser.
